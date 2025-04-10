@@ -1,0 +1,30 @@
+{
+  "name": "database-project",
+  "version": "1.0.0",
+  "description": "Smith College CSC230: Database Systems Starter database App that is updatable and dynamic Group: Bintu, Rehab, Fatima, Nafisa.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FatimaKonate120/database-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FatimaKonate120/database-project/issues"
+  },
+  "homepage": "https://github.com/FatimaKonate120/database-project#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.0",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.2"
+  }
+}
