@@ -12,7 +12,7 @@ module.exports = {
       // Equipment identifier (like serial number, inventory code, etc.)
       equipment_id: {
         type: Sequelize.STRING(50),
-        allowNull: false,
+        allowNull: false, // ✅ Keep this as NOT NULL
         unique: true
       },
       make: {
