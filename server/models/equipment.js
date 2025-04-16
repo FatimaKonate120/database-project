@@ -21,6 +21,10 @@ class Equipment extends Model {
     allowNull: true,
     unique: true
   },
+  model: {
+    type: DataTypes.STRING(100),
+    allowNull: true
+  },
   make: {
     type: DataTypes.STRING(100),
     allowNull: false

@@ -19,10 +19,6 @@ async up (queryInterface, Sequelize) {
       type: Sequelize.STRING(100),
       allowNull: false
     },
-    equipment_id: {
-      type: Sequelize.STRING(50),
-      allowNull: true
-    },
     purchase_date: {
       type: Sequelize.DATE,
       allowNull: true
