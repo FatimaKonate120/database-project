@@ -8,7 +8,7 @@ class Equipment extends Model {
     Equipment.hasMany(models.Loan, { foreignKey: 'id' });
   }
 }
- Equipment.init({
+  Equipment.init({
   // Auto-incrementing primary key
   id: {
     type: DataTypes.INTEGER,

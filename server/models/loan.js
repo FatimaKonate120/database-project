@@ -5,7 +5,10 @@ module.exports = (sequelize, DataTypes) => {
   class Loan extends Model {
     static associate(models) {
       Loan.belongsTo(models.Equipment, { foreignKey: 'equipment_id' });
-      Loan.belongsTo(models.User, { foreignKey: 'user_id' });
+      Loan.belongsTo(models.User, { 
+        foreignKey: 'user_id',
+        targetKey: 'user_id'  // This tells Sequelize to use user_id instead of id
+      });
     }
   }
 
