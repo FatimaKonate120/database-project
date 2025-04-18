@@ -6,8 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       Loan.belongsTo(models.Equipment, { foreignKey: 'equipment_id' });
       Loan.belongsTo(models.User, { 
-        foreignKey: 'user_id',
-        targetKey: 'user_id'  // This tells Sequelize to use user_id instead of id
+        foreignKey: 'user_id'
       });
     }
   }
