@@ -41,8 +41,8 @@ module.exports = {
           
           if (equipmentId && userId) {  // Only add if we found matching equipment and user
             loanData.push({
-              equipment_id: equipmentId,
-              user_id: parseInt(row.user_id),  // Use the mapped user id
+              equipment_id: equipmentId,  // Using the mapped equipment ID
+              user_id: userId,  // Using the mapped user ID
               date_out: dateOut,
               date_in: dateIn,
               location: row.location || null,
